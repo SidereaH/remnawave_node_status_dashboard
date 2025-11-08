@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  remnawave-status-dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '3000:3000'
+    environment:
+      - NODE_ENV=production
+      - API_BASE_URL=${API_BASE_URL}
+      - API_TOKEN=${API_TOKEN}
+    env_file:
+      - .env.production
+    restart: unless-stopped
+
+networks:
+  remnawave-network:
+    external: true

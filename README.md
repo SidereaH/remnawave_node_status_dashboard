@@ -33,7 +33,7 @@ npm install
 
 ### 2. Настройка окружения
 
-Создайте файл `.env.local`:
+Создайте файл `.env.local` и `.env.production` для локальной разработки и деплоя соответственно:
 
 ```env
 API_BASE_URL=https://your.adminpanel.com
