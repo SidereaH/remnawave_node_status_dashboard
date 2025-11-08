@@ -2,13 +2,13 @@ version: '3.8'
 
 services:
   remnawave-status-dashboard:
-    image: aliquamsiderea/remnawave-status-dashboard
+    image: aliquamsiderea/remnawave-status-dashboard:0.1.0
     #uncomment if you want build
     # build:
     #   context: .
     #   dockerfile: Dockerfile
     ports:
-      - '3000:3000'
+      - '3001:3001'
     environment:
       - NODE_ENV=production
       - API_BASE_URL=${API_BASE_URL}
