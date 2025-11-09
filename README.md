@@ -67,6 +67,8 @@ cd remnawave_node_status_dashboard
 ```env
 API_BASE_URL=https://your.adminpanel.com
 API_TOKEN=your_development_api_token_here
+METADATA_TITLE="Status Dashboard Title"
+METADATA_DESCRIPTION="Status Dashboard Description"
 ```
 
 **.env.production** (для продакшена):
@@ -75,6 +77,9 @@ API_TOKEN=your_development_api_token_here
 API_BASE_URL=https://your.production-panel.com
 API_TOKEN=your_production_api_token_here
 NODE_ENV=production
+METADATA_TITLE="Status Dashboard Title"
+METADATA_DESCRIPTION="Status Dashboard Description"
+
 ```
 
 ### Копирование файлов на сервер

@@ -39,7 +39,7 @@ export function HeaderSimple() {
 					<div className={classes.logoContainer}>
 						<div style={{ width: 28, height: 28 }} />
 						<Text fw={700} size='lg'>
-							ShadowNet VPN
+							VPN
 						</Text>
 					</div>
 					<div style={{ width: 200 }} />
