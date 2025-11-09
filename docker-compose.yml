@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   remnawave-status-dashboard:
     image: aliquamsiderea/remnawave-status-dashboard:0.1.0
@@ -14,11 +12,14 @@ services:
     networks:
       - remnawave-network
     environment:
-      - NODE_ENV=production
+      - NODE_ENV=${NODE_ENV}
       - API_BASE_URL=${API_BASE_URL}
       - API_TOKEN=${API_TOKEN}
     env_file:
       - .env.production
+#    volumes:
+#      - ./public/theme.ts:/src/app/theme/theme.ts # кастомные стили
+#      - ./public/Logo.png:/app/public/Logo.png # Кастомное лого
     restart: unless-stopped
 
 networks:
